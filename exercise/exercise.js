@@ -45,3 +45,11 @@ const totalCarPrices = cars.reduce((acc, car) => acc + car.price, 0);
 // You were asked to deliver a list of the cars
 // but from the least expensive to the most expensive one!
 // How could you --sort-- the array to achieve that?
+
+/* const orderByPrice = cars.sort(function (car1, car2) {
+  if (car1.price < car2.price) {
+    return -1;
+  }
+}); */
+
+const orderByPrice = cars.sort((a, b) => a.price - b.price);
