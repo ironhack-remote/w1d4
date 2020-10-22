@@ -32,6 +32,14 @@ const getCarsWithPriceBelow15000 = cars.filter((car) => car.price < 15000);
 // To do that, we have to sum all of the car values.
 // How could we do that?
 
+/* 
+const totalCarPrices = cars.reduce(function (acc,car) {
+return acc + car.price
+}, 0)
+*/
+
+const totalCarPrices = cars.reduce((acc, car) => acc + car.price, 0);
+
 // STEP 4
 
 // You were asked to deliver a list of the cars
