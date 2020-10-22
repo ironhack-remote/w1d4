@@ -239,29 +239,6 @@ function reduce(array, callback, starting) {
   return finalVal;
 }
 
-// function reduce(array, callbackFn, startingValue) {
-//   let finalValue = null;
-//   let accumulator = null;
-//   if (startingValue) {
-//     accumulator = startingValue;
-//   } else {
-//     accumulator = array[0];
-//   }
-//   for (let i = 0; i < array.length; i++) {
-//     const returned = callbackFn(accumulator, array[i + 1], i, array);
-//     accumulator = returned;
-//   }
-//   finalValue = accumulator;
-//   return finalValue;
-// }
-
-// reduce(
-//   [1, 2, 3, 4],
-//   function (accumulator, currentValue) {
-//     return accumulator + currentValue;
-//   },
-//   -1
-// );
 const sumOfNumbers = [1, 2, 3, 4].reduce(function (acc, val) {
   return acc + val;
 }, -1);
@@ -275,3 +252,15 @@ const aName = francisco.reduce(function (acc, val) {
 
 console.log("aName:", aName);
 console.log("sumOfNumbers:", sumOfNumbers);
+
+console.clear();
+
+const sortingAges = [27, 35, 52, 9, 10];
+
+console.log(
+  sortingAges.sort(function (a, b) {
+    return a - b;
+  })
+);
+
+console.log(["pauline", "marcel", "marta", "Zeus"].sort());
