@@ -6,6 +6,13 @@ console.log("cars", cars);
 // You were asked to submit a list of all the brands
 // you currently have in your stand! How could you do that?
 
+/* 
+const getCarBrands = cars.map(function (car) {
+   return car.brand
+})
+*/
+const getCarBrands = cars.map((car) => car.brand);
+
 // STEP 2
 
 // We want to advertise all the cars below 15.000€ to the public
