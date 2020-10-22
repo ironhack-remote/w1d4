@@ -18,6 +18,14 @@ const getCarBrands = cars.map((car) => car.brand);
 // We want to advertise all the cars below 15.000€ to the public
 // Can you deliver a list of all of the cars that meet that requirement?
 
+/* 
+const getCarsWithPriceBelow15000 = cars.filter(function (car) {
+   return car.price <15000
+})
+*/
+
+const getCarsWithPriceBelow15000 = cars.filter((car) => car.price < 15000);
+
 // STEP 3
 
 // We want to know how much our total collection of cars is worth!
